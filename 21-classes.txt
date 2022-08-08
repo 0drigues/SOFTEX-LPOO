@@ -1,0 +1,74 @@
+#Construção de classes (LPOO)
+
+classe Radar():
+	marca_carro: input(string)
+	modelo_carro: input(string)
+	cor_carro: input(string)
+	placa_carro: input(string)
+	vel_atual: 80 """km/h"""
+	vel_maxima: input(float)
+	limitar_vel: input(logic)
+	data_fabricacao: input(date)
+	doc_valida: input(logic)
+	apreensao: input(logic)
+
+	method checar_vel():
+		if(vel_atual > vel_maxima):
+			print("Veículo com velocidade acima da permitida")
+			limitar_vel = true
+		elif
+			pass
+		endif
+	end method	
+
+	method chechar_doc():
+		if(doc_valida):
+			print("Documentação válida")
+		elif:
+			print("Documentação inválida. Apreender veículo")
+			doc_valida: false
+		endif
+	end method
+
+	method apreender():
+		if (doc_validar == false or limitar_vel == true)
+			apreensao = true
+		else
+			pass
+	end method
+end class
+
+----------------------------------------------------------------------------------------
+
+class Notebook():
+	marca = input(string)
+	modelo = input(string)
+	serial_key = int(0)
+	preco = float
+	tam_ram = int
+	tam_hd = int
+	status = logic """true = ligado; false = desligado"""
+
+	method iniciar():
+		if (status == true):
+			print("Inicializando sistema")
+		elif:
+			print("Problemas para inicializar o sistema")
+		endif
+	end method
+	
+	method correcao():
+		status = true
+		print("Problema corrigido. Inicializando sistema")
+	end method
+	
+	method validacao():
+		serial_key = int(input("Digite seu número de série"))
+		if (serial_key > 9999 or serial_key < 999):
+			print("Seu número de série não é válido. Desligando o sistema")
+			status = false
+
+		else:
+			status = true
+	end method
+end class

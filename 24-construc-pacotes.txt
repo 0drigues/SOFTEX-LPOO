@@ -1,0 +1,31 @@
+#Criação de pacotes em padrão Java
+
+Crie dois pacotes baseados nas atribuições de uma empresa e inclua classes neles. 
+Lembre-se de trabalhar com os padrões Java.
+
+package pe.viaSulUnidade1.Concessionaria;
+	public Class Registro {
+		public nome = string
+		public CPF = float
+		public nascimento = float
+	}
+
+package pe.gov.Apac.Agencia
+	public Class Dados {
+		public Cidade = string
+		private preciptEsperada = float
+		public preciptAtual = float
+		private qtdAguaNoAr = float
+		private qtdAguaSaturac = float
+		public umidadeAtual = float
+		private Chuva = boolean
+
+		def calcUmidade:
+			umidadeAtual = qtdAguaNoAr / qtdAguaSaturac
+		
+		if (umidadeAtual > 0.75):
+			Chuva = true
+
+		else:
+			Chuva = false
+	}
